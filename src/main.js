@@ -3,6 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+//公共样式
+import '@/assets/style.css'
+//bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min'
+//zico字体小图标
+import 'zico/css/zico.min.css'
 
 Vue.config.productionTip = false
 
@@ -10,6 +17,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
+  // components: { App },
+  // template: '<App/>'
+  render:h=>h(App)
 })
